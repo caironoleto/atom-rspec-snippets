@@ -58,7 +58,7 @@
     'body': 'context "${1:context}" do\n  $0\nend'
   'describe (Controller)':
     'prefix': 'desc'
-    'body': 'require File.expand_path(File.dirname(__FILE__) + \'/../spec_helper\')\n\ndescribe ${1:controller} do\n  $0\nend'
+    'body': 'require \'spec_helper\'\n\ndescribe ${1:controller} do\n  $0\nend'
   'describe (RESTful Controller)':
     'prefix': 'desrc'
     'body': 'describe ${1:controller}, "${2:GET|POST|PUT|DELETE} ${3:/some/path}${4: with some parameters}" do\n  $0\nend'
